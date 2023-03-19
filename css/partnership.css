@@ -1,0 +1,68 @@
+.partnership_texts {
+  text-align: center;
+  background: #ed6b4d;
+  padding: 1.5rem;
+}
+h3.partnership_text {
+  letter-spacing: -0.25px;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+h1.our_rental_fleet_text {
+  letter-spacing: -0.45px;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 600;
+}
+p.partnership_paragraph {
+  letter-spacing: 0px;
+  color: #ffffffd5;
+  font-size: 1.2rem;
+}
+
+/* fleet  */
+.fleet_card {
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 20px;
+  margin: 6rem 8rem 1.5rem 8rem;
+}
+.company_info {
+  background: #fbfbfb;
+  border-radius: 0px 22px 22px 0px;
+  box-shadow: 0px 0px 0px #00000029;
+  padding: 3rem;
+}
+.company_info label {
+  font-weight: 600;
+}
+.fleet_info {
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 22px 0px 0px 22px;
+  box-shadow: 0px 0px 1px #00000029;
+}
+.fleet_info label {
+  font-weight: 600;
+}
+
+textarea.form-control {
+  height: 13rem;
+}
+.form-control {
+  margin-bottom: 0.5rem;
+}
+.submit_fleet_button {
+  text-align: right;
+  margin: 0 9rem 4rem 0;
+}
+.submit_fleet_button button {
+  padding: 10px 50px;
+  color: #ffffff;
+  border-width: 0px;
+  text-shadow: 0px 3px 6px #00000029;
+  background: transparent linear-gradient(90deg, #ed6b4d 0%, #ff6f00 100%) 0% 0%
+    no-repeat padding-box;
+  border-radius: 4px;
+  font-size: 1.2rem;
+}

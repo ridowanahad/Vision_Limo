@@ -1,0 +1,569 @@
+@import url("https://fonts.cdnfonts.com/css/general-sans");
+
+body {
+  font-family: "General Sans", sans-serif;
+}
+
+/* navbar styling start  */
+
+nav.nav-section {
+  background: #ffffff;
+  padding-top: 9px;
+  box-shadow: 0px 3px 6px #00000021;
+  z-index: 2;
+}
+
+.vision_logo a img {
+  width: 13rem;
+  margin-top: 0.8rem;
+}
+
+.vision_nav {
+  display: flex;
+  flex-direction: column;
+}
+ul.menu-items {
+  list-style-type: none;
+  margin-top: 0.3rem;
+  margin-left: 3rem;
+}
+
+/* navigation */
+.dropdown {
+  float: left;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+}
+.dropbtn {
+  display: flex;
+  justify-content: space-between;
+}
+.dropbtn i {
+  width: 10px;
+  height: 5px;
+  color: #ed6b4d;
+}
+.caret_down {
+  margin-top: 2px;
+  margin-left: 6px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  border-radius: 3px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a :hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* home section start  */
+.home-section {
+  margin: 5rem 0;
+}
+.home-image .multiple_car {
+  width: 781px;
+  height: 253px;
+  opacity: 1;
+}
+.home-image .primary_symbol {
+  position: absolute;
+  top: -5rem;
+  right: 0rem;
+  width: 900px;
+  z-index: -1;
+}
+.unlock_big {
+  font: normal normal 600 64px/60px General Sans;
+  letter-spacing: -0.45px;
+  color: #3b3b3b;
+}
+.unlock_big span {
+  color: #ed6b4d;
+}
+.home-text span.plan {
+  font: normal normal normal 25px/34px General Sans;
+  color: #262f63;
+}
+h4.small_text {
+  font: normal normal normal 23px/31px General Sans;
+  letter-spacing: 0px;
+  color: #7d7d7d;
+}
+
+/* book now section  */
+
+.book-now-section {
+  margin: 1rem 14rem 5rem 14rem;
+  background: #ed6b4d 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 18px #00000012;
+  border-radius: 8px;
+  padding: 1.5rem 1.5rem;
+  min-height: 310px;
+}
+
+.offer {
+  position: absolute;
+  top: 37.2rem;
+  right: 13.2rem;
+  background: #252e62;
+  color: #ffffff;
+  padding: 7px 9px;
+  border-radius: 7px 0 0 7px;
+}
+.select_car_type {
+  padding: 1rem 0;
+}
+.pick_up_location_div {
+  padding: 1rem 0rem;
+}
+
+.pick_up_type select {
+  padding: 9px 15rem 9px 8px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  color: #262f63;
+  border-width: 0px;
+}
+.drop_of_location_text {
+  letter-spacing: 0px;
+  color: #f9f9f9;
+}
+.select_car_type_text {
+  color: #f9f9f9;
+}
+.pick_up_location_text {
+  color: #f9f9f9;
+}
+.pick-up_location select {
+  padding: 9px 18rem 9px 8px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  color: #262f63;
+  border-width: 0px;
+}
+.pick_up_date_text {
+  color: #f9f9f9;
+}
+.pick-up_date input {
+  padding: 9px 18.6rem 9px 11px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  color: #262f63;
+  border-width: 0px;
+}
+.drop_of_location input {
+  padding: 9px 16.2rem 9px 11px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  color: #262f63;
+  border-width: 0px;
+}
+
+.book_now_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.book_now_div button {
+  padding: 10px 30px;
+  border-radius: 8px;
+  color: #ffffff;
+  text-shadow: 0px 3px 6px #00000029;
+  background: #252e62;
+  border-width: 0px;
+  margin-top: 19px;
+}
+
+/* vehicle model text start  */
+
+.vehicle_models_texts {
+  text-align: center;
+  background: #ed6b4d;
+  padding: 1.5rem;
+}
+h3.vehicle_model_text {
+  letter-spacing: -0.25px;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+h1.our_rental_fleet_text {
+  letter-spacing: -0.45px;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 600;
+}
+p.vehicle_model_paragraph {
+  letter-spacing: 0px;
+  color: #ffffffd5;
+  font-size: 1.2rem;
+}
+
+/* Vehicle Models */
+
+.main {
+  padding: 4rem 5rem 3rem 5rem;
+  min-height: 545px;
+}
+
+.column {
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  /* content: ""; */
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 6px #00000029;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #252e62;
+  color: white;
+}
+#myBtnContainer {
+  text-align: center;
+  margin-top: 1rem;
+}
+/* function end  */
+button.book_now_text {
+  padding: 10px 30px;
+  color: #ffffff;
+  border-width: 0px;
+  margin-top: 19px;
+  text-shadow: 0px 3px 6px #00000029;
+  background: transparent linear-gradient(90deg, #ed6b4d 0%, #ff6f00 100%) 0% 0%
+    no-repeat padding-box;
+  border-radius: 4px;
+  margin-right: 0.3rem;
+}
+button.book_now_number {
+  padding: 10px 30px;
+  color: #ffffff;
+  border-width: 0px;
+  margin-top: 19px;
+  background: #252e62;
+  text-shadow: 0px 3px 6px #00000029;
+  border-radius: 4px;
+}
+
+.car_details_text {
+  background: #fef2ef;
+  padding: 4rem 4rem 2rem 4rem;
+  border-radius: 8px;
+}
+.dollar {
+  color: #ed6b4d;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.rent_text {
+  color: #7d7d7d;
+}
+.car_features {
+  list-style: none;
+  padding-left: 0;
+  color: #232323;
+  font-weight: 600;
+}
+.Cadillac_XT6 img {
+  width: 45rem;
+}
+
+/* testimonial section */
+
+.owl-theme .owl-nav {
+  display: none;
+}
+.owl-carousel .owl-stage {
+  padding-bottom: 1.5rem;
+}
+.testimonial_section {
+  background: #f8f8f8;
+  padding: 2rem;
+}
+
+.testimonial_section .container {
+  max-width: 1150px;
+}
+
+.testimonial {
+  letter-spacing: -0.22px;
+  color: #4c537e;
+  font-size: 1.3rem;
+}
+.testimonial_text {
+  text-align: center;
+  padding: 1rem;
+}
+.clients_testimonial_text {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -0.45px;
+  color: #000000;
+}
+.testimonial_title_paragraph {
+  letter-spacing: 0px;
+  color: #414141;
+}
+
+.single_testimonial_content {
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 0px 1px 2px #00000029;
+  border-radius: 13px;
+}
+.testimonial_paragraph {
+  color: #414141;
+  font-weight: 600;
+  font-size: 20px;
+}
+.client_name_div {
+  margin-top: 2.3rem;
+}
+.client_name {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  font-weight: 600;
+}
+.client_level {
+  color: #848484;
+  font-size: 14px;
+}
+
+.Client_image {
+  border-radius: 6rem;
+  margin-top: 1.2rem;
+  width: 5rem;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: #fb6e13;
+}
+.quote_image img {
+  margin-top: 3rem;
+  width: 2rem;
+}
+
+/* Blog section start  */
+
+.blog_text_titles {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #ed6b4d;
+}
+
+h1.articles {
+  letter-spacing: -0.45px;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 600;
+}
+h3.blog {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+p.blog_paragraph {
+  letter-spacing: 0px;
+  color: #ffffffd5;
+  font-size: 1.2rem;
+}
+
+.single_blog_content {
+  margin: 4rem 0;
+  background: #ffffff;
+  box-shadow: 4px 5px 6px #0000000f;
+  border-radius: 10px;
+}
+
+.single_blog_content img {
+  width: 18.2rem;
+  padding-left: 16px;
+}
+h2.blog_text {
+  color: #414141;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1rem 1rem 0 1rem;
+}
+p.single_blog_paragraph {
+  color: #888888;
+  font-size: 0.9rem;
+  padding: 0 1rem;
+}
+.readmore {
+  padding: 1rem;
+}
+.single_blog_texts {
+  padding: 0 0 1rem 0;
+}
+.single_blog_texts i {
+  color: #fb751f;
+  margin-left: -1rem;
+}
+
+/* contact section  */
+
+section.contact_section {
+  background: #fef2ef;
+  padding: 4rem 4rem 8rem 4rem;
+}
+h1.contact_us_text {
+  letter-spacing: -0.31px;
+  color: #000000;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+h1.contact_form_text {
+  letter-spacing: -0.31px;
+  color: #000000;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.address_text ul {
+  list-style: none;
+  padding-left: 0;
+}
+.contact_single_head {
+  color: #414141;
+  font-size: 17px;
+  font-weight: 600;
+}
+.contact_single_body {
+  color: #414141;
+  font-size: 16px;
+}
+.single_contact_us_texts {
+  margin-bottom: 1.3rem;
+}
+
+/* contact form  */
+.single_contact_input input {
+  padding: 0.4rem 14rem 0.4rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1.3rem;
+  border-color: white;
+  border-width: 0px;
+  box-shadow: 0px 3px 6px #00000008;
+}
+.single_text_area textarea {
+  padding: 0.4rem 40.76rem 3rem 0.4rem;
+  border-radius: 5px;
+  border-color: white;
+  box-shadow: 0px 3px 6px #00000008;
+  margin-bottom: 1.3rem;
+}
+.send_message {
+  text-align: right;
+}
+.send_message button {
+  background: transparent linear-gradient(90deg, #ed6b4d 0%, #ff6f00 100%) 0% 0%;
+  border-width: 0px;
+  border-radius: 4px;
+  color: #ffffff;
+  text-shadow: 0px 3px 6px #00000029;
+  padding: 10px 20px;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+/* footer section  */
+
+footer {
+  background-color: #ed6b4d;
+  color: #ffffff;
+}
+.first_footer_content {
+  margin-top: 2.5rem;
+}
+.single_footer_content {
+  margin-top: 4rem;
+}
+.single_footer_content ul {
+  list-style: none;
+}
+.single_footer_content li {
+  padding-bottom: 0.4rem;
+}
+.second_footer_col {
+  padding-left: 4rem;
+}
+
+footer .footer_car {
+  width: 15rem;
+}
+.design_by {
+  padding-left: 33px;
+}
+.sp_logo {
+  width: 12rem;
+  padding-bottom: 2rem;
+}
+.vision_white_logo {
+  padding-bottom: 1rem;
+}
+
+/* display car  */
+
+.display_car {
+  padding: 6rem;
+}
+
+.car_display img {
+  position: absolute;
+  right: 12rem;
+  top: 220.35rem;
+}

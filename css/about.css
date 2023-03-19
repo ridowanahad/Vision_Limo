@@ -1,0 +1,46 @@
+.about_texts {
+  text-align: center;
+  background: #ed6b4d;
+  padding: 1.5rem;
+}
+.about_text {
+  letter-spacing: -0.25px;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.our_rental_fleet_text {
+  letter-spacing: -0.45px;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.about_paragraph {
+  letter-spacing: 0px;
+  color: #ffffffd5;
+  font-size: 1.2rem;
+}
+
+.about-history-paragraph {
+  padding: 2rem 4rem 2rem 1rem;
+}
+.flag {
+  background-color: #fef2ef;
+  margin: 2.2rem 2.2rem 2.2rem;
+}
+
+.flag img {
+  width: 34rem;
+}
+
+/* fleet  */
+.fleet {
+  background-color: #fef2ef;
+  margin: 2rem;
+}
+.fleet img {
+  width: 34rem;
+}
+.fleet_paragraph {
+  padding: 2rem;
+}
