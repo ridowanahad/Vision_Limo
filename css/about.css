@@ -25,14 +25,19 @@
   padding: 2rem 4rem 2rem 1rem;
 }
 .flag {
-  background-color: #fef2ef;
-  margin: 2.2rem 2.2rem 2.2rem;
+  position: relative;
 }
-
 .flag img {
-  width: 34rem;
+  width: 100%;
+  height: auto;
 }
-
+.flag .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
 /* fleet  */
 .fleet {
   background-color: #fef2ef;
@@ -44,3 +49,11 @@
 .fleet_paragraph {
   padding: 2rem;
 }
+.flag .primary_logo {
+  position: absolute;
+  left: 12rem;
+  top: 35rem;
+  width: 23rem;
+}
+/* .primary_logo_two {
+} */

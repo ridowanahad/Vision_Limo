@@ -1,38 +1,48 @@
 // for testimonials section
 
+// testimonial
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
+  $(".testimonial-hgh").owlCarousel({
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
+    dots: true,
+    navText: "",
+    item: 2,
     responsive: {
       0: {
         items: 1,
       },
-      600: {
+      480: {
+        items: 1,
+      },
+      676: {
         items: 2,
       },
       1000: {
-        items: 2,
+        items: 3,
       },
     },
   });
-});
-
-// testimonial
-$(document).ready(function () {
-  $(".owl-carousel-two").owlCarousel({
+  $(".blog-carousel").owlCarousel({
     loop: true,
     margin: 10,
-    nav: true,
+    dots: true,
+    navText: "",
     responsive: {
       0: {
         items: 1,
       },
       600: {
-        items: 3,
+        items: 2,
+      },
+      800: {
+        items: 2,
       },
       1000: {
+        items: 3,
+      },
+      1400: {
         items: 4,
       },
     },
@@ -75,7 +85,7 @@ function removeClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-var btnContainer = document.getElementById("myBtnContainer"); //onclick change btn style
+var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
@@ -85,3 +95,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
+// date picker
+$(function () {
+  $("#datepicker").datepicker();
+});

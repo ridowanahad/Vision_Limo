@@ -1,0 +1,480 @@
+/* nav style  */
+@media (max-width: 319px) {
+  .home-image .primary_symbol {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .navbar .navbar-brand {
+    margin-left: 0px;
+  }
+  .navbar .navbar-brand img {
+    width: 200px;
+  }
+  /* home section start  */
+
+  .unlock_big {
+    font-size: 30px;
+    line-height: inherit;
+  }
+  .home-text span.plan {
+    font-size: 20px;
+  }
+  .home-image .multiple_car {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  /* book now section start  */
+  .book-now-section .wrapper-content {
+    margin: 25px 0;
+    padding: 1rem;
+  }
+  .single_blog_content img {
+    padding: 0;
+  }
+  h2.blog_text {
+    padding: 1rem 0;
+  }
+  p.single_blog_paragraph {
+    padding: 0;
+  }
+  .readmore {
+    padding: 1rem 0;
+  }
+  .single_blog_texts i {
+    margin-left: 0;
+  }
+
+  /* vehicle model section  */
+  #myBtnContainer .btn {
+    margin-bottom: 0.5rem;
+  }
+  .car_details_text {
+    padding: 1rem;
+  }
+  .main {
+    padding: 1rem;
+  }
+  h1.our_rental_fleet_text {
+    font-size: 1.5rem;
+  }
+  h3.vehicle_model_text {
+    font-size: 1rem;
+  }
+  .vehicle_demo_section .main .content img {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .details_main {
+    right: 0;
+    transform: rotate(180deg) translateX(-50%);
+    bottom: 0 !important;
+    left: 40% !important;
+    top: 100%;
+  }
+  .vehicle_demo_section {
+    background-image: none;
+  }
+  .vehicle_demo_section .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .book-now-section .wrapper-content .booking-offer {
+    right: -9px;
+  }
+  .book-now-section .wrapper-content .offer {
+    position: absolute;
+    right: -16px;
+    top: 32px;
+    border-left: 17px solid transparent;
+    border-right: 19px solid transparent;
+    border-bottom: 10px solid #252e62;
+    border-left-width: 4px;
+    transform: rotate(88deg);
+  }
+  .dollar {
+    font-size: 2rem;
+  }
+  .testimonial_section .quote_image img {
+    width: 20%;
+  }
+  .testimonial_section {
+    width: 100%;
+  }
+  .testimonial_paragraph {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .testimonial_section .owl-carousel .owl-item .Client_image {
+    width: 25%;
+  }
+  .single_testimonial_content {
+    padding: 15px;
+  }
+  .contact_section {
+    padding: 2rem 1rem 4rem 1rem;
+  }
+  .contact_section .contact_us {
+    margin-bottom: 2rem;
+  }
+  .contact_section .form-control {
+    margin-bottom: 1rem;
+  }
+  .form-row {
+    margin-bottom: 0;
+  }
+  .clients_testimonial_text {
+    font-size: 1.5rem;
+  }
+  .testimonial {
+    font-size: 1rem;
+  }
+  /* blog  */
+  h1.articles {
+    font-size: 1.5rem;
+  }
+  h3.blog {
+    font-size: 1rem;
+  }
+  p.blog_paragraph {
+    font-size: 1rem;
+  }
+  h1.contact_us_text {
+    font-size: 1.5rem;
+  }
+  h1.contact_form_text {
+    font-size: 1.5rem;
+  }
+
+  /* display car  */
+
+  .display_car {
+    margin: 3.5rem 0;
+  }
+  .display_car .car_display {
+    left: 0;
+    bottom: -5rem;
+    transform: translateX(-0%) !important;
+  }
+  .car_display img {
+    width: 100%;
+  }
+  .second_footer_col {
+    padding: 0;
+  }
+  footer .row > * {
+    width: auto;
+  }
+  footer ul {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 575px) {
+  .home-text span.plan {
+    font-size: 20px;
+  }
+  .unlock_big {
+    font-size: 30px;
+    line-height: inherit;
+  }
+  .home-section {
+    padding: 0 1rem;
+  }
+  h4.small_text {
+    font-size: 19px;
+  }
+  .navbar .navbar-brand {
+    margin-left: 0;
+  }
+  .vehicle_demo_section {
+    background-image: none;
+  }
+  .main {
+    padding: 2rem;
+  }
+  .details_main {
+    right: 0;
+    transform: rotate(180deg) translateX(-50%);
+    bottom: 0 !important;
+    left: 40% !important;
+    top: 100%;
+  }
+  .car_details_text {
+    padding: 1.5rem;
+  }
+  h1.our_rental_fleet_text {
+    font-size: 2rem;
+  }
+  h3.vehicle_model_text {
+    font-size: 1.2rem;
+  }
+  .btn {
+    margin-bottom: 0.5rem;
+  }
+  #myBtnContainer {
+    margin: 1rem;
+  }
+  h1.articles {
+    font-size: 2rem;
+  }
+  h3.blog {
+    font-size: 1.2rem;
+  }
+  h1.contact_us_text {
+    font-size: 2rem;
+  }
+  h1.contact_form_text {
+    font-size: 2rem;
+  }
+  .display_car .car_display {
+    position: absolute;
+    left: 0;
+    bottom: -6.5rem;
+    transform: translateX(-0%) !important;
+  }
+  .clients_testimonial_text.clients_testimonial_text {
+    font-size: 2rem;
+  }
+
+  .testimonial_section .quote_image img {
+    width: 20%;
+  }
+  .testimonial_section {
+    padding: 1rem;
+  }
+  .testimonial_paragraph {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .testimonial_section .owl-carousel .owl-item .Client_image {
+    width: 25%;
+  }
+  .single_testimonial_content {
+    padding: 15px;
+  }
+  .second_footer_col {
+    padding-left: 0;
+  }
+  footer .row > * {
+    width: auto;
+  }
+  footer .footer_car {
+    width: 40%;
+    margin: 3rem 0 0 10rem;
+  }
+  .contact_section .container {
+    max-width: none;
+    width: 100%;
+  }
+  .contact_section {
+    padding: 4rem 1rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar .navbar-brand {
+    margin-left: 0;
+  }
+  .unlock_big {
+    font-size: 2.5rem;
+    line-height: normal;
+  }
+  .home-section {
+    padding: 0 1rem;
+  }
+  .home-section .container {
+    max-width: none;
+  }
+  #myBtnContainer .btn {
+    margin-bottom: 0.5rem;
+  }
+  .vehicle_demo_section {
+    /* background-position: bottom; */
+    background-image: none;
+  }
+  .vehicle_demo_section .content img {
+    margin-top: 3rem;
+  }
+  .details_main {
+    transform: rotate(180deg) translateX(-50%);
+    left: 45% !important;
+    top: 100%;
+  }
+
+  /* .dollar {
+    font-size: 2rem;
+  } */
+  .testimonial_section .quote_image img {
+    width: 10%;
+  }
+  .testimonial_section {
+    padding: 1rem;
+  }
+  .testimonial_paragraph {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .testimonial_section .owl-carousel .owl-item .Client_image {
+    width: 15%;
+  }
+  .testimonial_section .container {
+    width: 100%;
+    max-width: none;
+  }
+  .single_testimonial_content {
+    padding: 15px;
+  }
+  .clients_testimonial_text {
+    font-size: 2.5rem;
+  }
+  h1.articles {
+    font-size: 2.5rem;
+  }
+  .container {
+    width: 100%;
+    max-width: none;
+  }
+  .display_car {
+    margin: 6.5rem 0;
+  }
+  .display_car .car_display {
+    position: absolute;
+    left: 0;
+    bottom: -9rem;
+    transform: translateX(-0%) !important;
+  }
+  .contact_section .container {
+    max-width: none;
+    width: 100%;
+  }
+  .contact_section {
+    padding: 4rem 1rem;
+  }
+  footer .row > * {
+    width: auto;
+  }
+  footer .footer_car {
+    max-width: 40%;
+    margin: 3rem 0 0 12rem;
+  }
+  footer .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar .navbar-brand {
+    margin-left: 0;
+  }
+  .unlock_big {
+    font-size: 2.5rem;
+    line-height: normal;
+  }
+  .home-section {
+    padding: 0 1rem;
+  }
+  .home-section .container {
+    max-width: none;
+  }
+  .main {
+    padding: 0.5rem;
+  }
+  .background {
+    padding: 0 1rem;
+  }
+  .vehicle_demo_section {
+    background-image: none;
+  }
+  .details_main {
+    right: 0;
+    transform: rotate(180deg) translateX(-50%);
+    bottom: 0 !important;
+    left: 50% !important;
+    top: 100%;
+  }
+  .testimonial_section .container {
+    max-width: none;
+    width: 100%;
+  }
+
+  .testimonial_section .quote_image img {
+    width: 8%;
+  }
+  .testimonial_section {
+    padding: 1rem;
+  }
+  .testimonial_paragraph {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .testimonial_section .owl-carousel .owl-item .Client_image {
+    width: 18%;
+  }
+  .single_testimonial_content {
+    padding: 21px;
+  }
+  .blog_section .container {
+    max-width: none;
+    width: 100%;
+  }
+  #myBtnContainer .btn {
+    margin-bottom: 0.5rem;
+  }
+
+  .contact_section .container {
+    max-width: none;
+    width: 100%;
+  }
+  .contact_section {
+    padding: 4rem 1rem;
+  }
+  .display_car {
+    margin: 9rem 0;
+  }
+  .display_car .car_display {
+    left: 0;
+    bottom: -12.3rem;
+    transform: translateX(-0%) !important;
+  }
+  .car_display img {
+    width: 100%;
+  }
+  footer {
+    padding: 1rem;
+  }
+  footer .row > * {
+    width: auto;
+  }
+  footer .footer_car {
+    max-width: 40%;
+    margin: 5rem 0 0 7rem;
+  }
+  footer .container {
+    /* width: 100%; */
+    max-width: 100%;
+  }
+  .second_footer_col {
+    padding-left: 0;
+  }
+  footer ul {
+    padding-left: 0;
+  }
+  .signature {
+    position: absolute;
+  }
+  .recognition {
+    margin-left: 6rem;
+  }
+  footer .footer_car {
+    margin-top: 2rem;
+  }
+  .single_footer_content {
+    margin-top: 2rem;
+  }
+}
