@@ -19,7 +19,7 @@ $(document).ready(function () {
       676: {
         items: 2,
       },
-      1000: {
+      1199: {
         items: 3,
       },
     },
