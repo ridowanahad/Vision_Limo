@@ -80,3 +80,10 @@
 .form-control {
   margin-bottom: 0.5rem;
 }
+.modal-content {
+  padding: 1rem;
+}
+.card_title_div {
+  display: flex;
+  justify-content: space-between;
+}

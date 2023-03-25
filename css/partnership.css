@@ -23,9 +23,11 @@ p.partnership_paragraph {
 
 /* fleet  */
 .fleet_card {
+  position: relative;
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 20px;
-  margin: 6rem 8rem 1.5rem 8rem;
+  margin: 5rem 8rem 1.5rem 8rem;
+  z-index: 6;
 }
 .company_info {
   background: #fbfbfb;
@@ -65,4 +67,19 @@ textarea.form-control {
     no-repeat padding-box;
   border-radius: 4px;
   font-size: 1.2rem;
+}
+.fleet_section {
+  background-image: url(/images/Path\ 33.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 43%;
+  position: relative;
+  z-index: 3;
+}
+
+.svgtwo {
+  position: absolute;
+  right: 63rem;
+  top: -10rem;
+  z-index: 3;
 }

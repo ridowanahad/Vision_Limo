@@ -23,31 +23,44 @@
 
 .about-history-paragraph {
   padding: 2rem 4rem 2rem 1rem;
+  font-weight: 600;
 }
 .flag {
   position: relative;
+  height: 100%;
 }
 .flag img {
   width: 100%;
   height: auto;
 }
-.flag .logo {
+.flag .group {
+  height: 100%;
+}
+.about_history_section .flag .logo img {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 52%;
+  top: 45%;
   text-align: center;
   transform: translate(-50%, -50%);
+  width: 56%;
+}
+.fleet_section .flag .logo img {
+  position: absolute;
+  left: 48%;
+  top: 39%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 56%;
 }
 /* fleet  */
 .fleet {
   background-color: #fef2ef;
   margin: 2rem;
 }
-.fleet img {
-  width: 34rem;
-}
+/*  */
 .fleet_paragraph {
   padding: 2rem;
+  font-weight: 600;
 }
 .flag .primary_logo {
   position: absolute;
@@ -55,5 +68,9 @@
   top: 35rem;
   width: 23rem;
 }
-/* .primary_logo_two {
-} */
+.fleet_section .about_car img {
+  position: absolute;
+  top: 22rem;
+  right: 7rem;
+  width: 75%;
+}

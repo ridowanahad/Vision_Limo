@@ -92,6 +92,13 @@
     border-left-width: 4px;
     transform: rotate(88deg);
   }
+  .details_main {
+    right: 0;
+    transform: rotate(180deg) translateX(-50%);
+    bottom: 0 !important;
+    left: 40% !important;
+    top: 100%;
+  }
   .dollar {
     font-size: 2rem;
   }
@@ -154,6 +161,39 @@
   }
   footer ul {
     padding-left: 0;
+  }
+  /* partnership  */
+  .fleet_section {
+    background-image: none;
+  }
+  .fleet_card {
+    margin: 0;
+  }
+  .submit_fleet_button {
+    text-align: center;
+    margin: 2rem;
+  }
+  .fleet_info {
+    border-radius: 22px 22px 0 0;
+  }
+  .company_info {
+    border-radius: 0 0px 22px 22px;
+  }
+
+  /* about */
+
+  .about_history_section {
+    padding: 0rem;
+  }
+  .about-history-paragraph {
+    padding: 1rem;
+  }
+  .fleet_paragraph {
+    padding: 1rem;
+  }
+  .fleet_section .about_car img {
+    top: 10rem;
+    right: 3rem;
   }
 }
 
@@ -263,6 +303,39 @@
   .contact_section {
     padding: 4rem 1rem;
   }
+  /* partnership  */
+  .fleet_section {
+    background-image: none;
+  }
+  .fleet_card {
+    margin: 0;
+  }
+  .submit_fleet_button {
+    text-align: center;
+    margin: 2rem;
+  }
+  .fleet_info {
+    border-radius: 22px 22px 0 0;
+  }
+  .company_info {
+    border-radius: 0 0px 22px 22px;
+  }
+
+  /* about */
+
+  .about_history_section {
+    padding: 0rem;
+  }
+  .about-history-paragraph {
+    padding: 1rem;
+  }
+  .fleet_paragraph {
+    padding: 1rem;
+  }
+  .fleet_section .about_car img {
+    top: 13rem;
+    right: 4rem;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .navbar .navbar-brand {
@@ -293,6 +366,9 @@
     top: 100%;
   }
 
+  .car_details_text {
+    padding: 4rem 6rem 2rem 4rem;
+  }
   .quote_image {
     margin-top: 0.6rem;
   }
@@ -348,6 +424,42 @@
   }
   footer .container {
     width: 100%;
+  }
+  /* partnership  */
+  .fleet_section {
+    background-image: none;
+  }
+  .fleet_card {
+    margin: 0;
+  }
+  .submit_fleet_button {
+    text-align: center;
+    margin: 2rem;
+  }
+  .fleet_info {
+    border-radius: 22px 22px 0 0;
+  }
+  .company_info {
+    border-radius: 0 0px 22px 22px;
+  }
+
+  /* about */
+
+  .about_history_section {
+    padding: 0rem;
+  }
+  .about-history-paragraph {
+    padding: 1rem 1.5rem;
+  }
+  .fleet_paragraph {
+    padding: 1rem 1.5rem;
+  }
+  .first_footer_content {
+    margin: 2rem;
+  }
+  .fleet_section .about_car img {
+    top: 18rem;
+    right: 4rem;
   }
 }
 
@@ -465,8 +577,48 @@
   .single_footer_content {
     margin-top: 2rem;
   }
-}
+  /* partnership  */
+  .fleet_section {
+    background-size: 100%;
+  }
+  .fleet_card {
+    margin: 2rem;
+  }
+  .submit_fleet_button {
+    text-align: center;
+    margin: 2rem;
+  }
+  .fleet_info {
+    border-radius: 22px 22px 0 0;
+  }
+  .company_info {
+    border-radius: 0 0px 22px 22px;
+  }
+  .svgtwo {
+    right: 63rem;
+    top: -10rem;
+  }
+  /* about */
 
+  .about_history_section .container {
+    max-width: 100%;
+  }
+  .about-history-paragraph {
+    padding: 1rem 2rem;
+  }
+  .fleet_paragraph {
+    padding: 1rem 2rem;
+  }
+
+  .fleet_section .container {
+    max-width: 100%;
+  }
+  .fleet_section .about_car img {
+    top: 22rem;
+    right: 6rem;
+  }
+}
+/* extra start */
 @media (min-width: 891px) and (max-width: 991px) {
   footer .footer_car {
     max-width: 30%;
@@ -502,6 +654,7 @@
     width: 95%;
   }
 }
+/* extra end  */
 @media (min-width: 992px) and (max-width: 1199px) {
   .navbar .navbar-brand {
     margin-left: 9px;
@@ -572,6 +725,41 @@
   footer .footer_car {
     margin-top: 0;
   }
+  /* partnership  */
+  .fleet_section {
+    background-size: 48%;
+  }
+  .fleet_card {
+    margin: 2rem;
+  }
+  .submit_fleet_button {
+    text-align: center;
+    margin: 2rem;
+  }
+  .svgtwo {
+    right: 122rem;
+    width: 2%;
+    top: -31rem;
+  }
+  /* about */
+
+  .about_history_section .container {
+    max-width: 100%;
+  }
+  .about-history-paragraph {
+    padding: 2rem 2rem 2rem 0rem;
+  }
+  .fleet_paragraph {
+    padding: 2.5rem 1rem;
+  }
+
+  .fleet_section .container {
+    max-width: 100%;
+  }
+  .fleet_section .about_car img {
+    top: 19rem;
+    right: 4rem;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
   .home-section {
@@ -599,6 +787,9 @@
     bottom: 0 !important;
     left: 97% !important;
     top: 50%;
+  }
+  .car_details_text {
+    padding: 4rem 5rem 2rem 4rem;
   }
   .testimonial_section .container {
     max-width: 100%;
@@ -632,6 +823,41 @@
   footer .footer_car {
     margin-top: 0;
   }
+  /* partnership  */
+  .fleet_section {
+    background-size: 49%;
+  }
+  .fleet_card {
+    margin: 2rem;
+  }
+  .submit_fleet_button {
+    text-align: right;
+    margin: 2rem;
+  }
+  .svgtwo {
+    right: 115rem;
+    width: 18%;
+    top: -33rem;
+  }
+  /* about */
+
+  .about_history_section .container {
+    max-width: 100%;
+  }
+  .about-history-paragraph {
+    padding: 2rem 1rem 2rem 0rem;
+    font-size: 1.2rem;
+  }
+  .fleet_paragraph {
+    padding: 2.5rem 1rem;
+    font-size: 1.2rem;
+  }
+  .fleet_section .container {
+    max-width: 100%;
+  }
+  .fleet_section .about_car img {
+    right: 4rem;
+  }
 }
 @media (min-width: 1401px) and (max-width: 1900px) {
   .navbar {
@@ -664,14 +890,14 @@
     right: 0;
     transform: rotate(90deg) translateX(-50%);
     bottom: 0 !important;
-    left: 97% !important;
+    left: 96% !important;
     top: 50%;
     border-left: 37px solid transparent;
     border-right: 39px solid transparent;
     border-bottom: 43px solid #fef2ef;
   }
   .car_details_text {
-    padding: 5rem 10rem 4rem 4rem;
+    padding: 5rem 7rem 4rem 2rem;
   }
   .dollar {
     font-size: 3.5rem;
@@ -726,5 +952,44 @@
   footer .container {
     max-width: 100%;
     padding: 0 5rem;
+  }
+  /* partnership  */
+  .fleet_section {
+    background-size: 47%;
+  }
+  .fleet_card {
+    margin: 6rem 4rem 2rem 4rem;
+  }
+  .submit_fleet_button {
+    text-align: right;
+    margin: 3rem 4rem;
+  }
+  .svgtwo {
+    right: 129rem;
+    width: 10%;
+    top: -27rem;
+  }
+  /* about */
+
+  .about_history_section .container {
+    max-width: 100%;
+  }
+  .about-history-paragraph {
+    padding: 2.5rem 4rem 2rem 0rem;
+    font-size: 1.4rem;
+  }
+  .fleet_paragraph {
+    padding: 3rem 0rem 1rem 4.5rem;
+    font-size: 1.3rem;
+  }
+  .fleet_section .container {
+    max-width: 100%;
+    padding: 0 9rem;
+  }
+  .fleet_section .flag {
+    padding-right: 2.5rem;
+  }
+  .about_history_section .flag {
+    padding-left: 2.5rem;
   }
 }

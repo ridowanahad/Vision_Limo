@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/partnership.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -15,108 +16,137 @@
     <title>Partnership</title>
   </head>
   <body>
-    <header>
-      <nav class="nav-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="vision_logo">
-                <a href="/index.html">
-                  <img
-                    src="/images/VisionLimo-PrimaryLogo@4x.png"
-                    alt="Vision_Limo_Logo"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8">
-              <div class="vision_nav">
-                <ul class="menu-items">
-                  <li class="dropdown">
-                    <div class="dropbtn">
-                      Partnership
-                      <div class="caret_down">
-                        <i class="fa fa-thin fa-angle-down"></i>
-                      </div>
-                    </div>
-                    <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
-                  </li>
-                  <li class="dropdown">
-                    <div class="dropbtn">
-                      Fleet
-                      <div class="caret_down">
-                        <i class="fa fa-thin fa-angle-down"></i>
-                      </div>
-                    </div>
-                    <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
-                  </li>
-                  <li class="dropdown">
-                    <div class="dropbtn">
-                      Services
-                      <div class="caret_down">
-                        <i class="fa fa-thin fa-angle-down"></i>
-                      </div>
-                    </div>
-                    <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
-                  </li>
-                  <li class="dropdown">
-                    <div class="dropbtn">
-                      Contact Us
-                      <div class="caret_down">
-                        <i class="fa fa-thin fa-angle-down"></i>
-                      </div>
-                    </div>
-                    <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
-                  </li>
-                  <li class="dropdown">
-                    <div class="dropbtn">
-                      About Us
-                      <div class="caret_down">
-                        <i class="fa fa-thin fa-angle-down"></i>
-                      </div>
-                    </div>
-                    <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
-                  </li>
-                  <li class="dropdown">
-                    <div class="dropbtn">
-                      Blog
-                      <div class="caret_down">
-                        <i class="fa fa-thin fa-angle-down"></i>
-                      </div>
-                    </div>
-                    <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img
+            src="/images/VisionLimo-PrimaryLogo@4x.png"
+            alt="Vision_Limo_Logo"
+          />
+        </a>
+        <!-- hamburger icon -->
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-content"
+        >
+          <div class="hamburger-toggle">
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
           </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                >Partnership</a
+              >
+              <ul class="dropdown-menu shadow">
+                <li>
+                  <a class="dropdown-item" href="/html/partnership.html"
+                    >Partnership</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">link 2</a></li>
+
+                <li><hr class="dropdown-divider" /></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                >Fleet</a
+              >
+              <ul class="dropdown-menu shadow">
+                <li>
+                  <a class="dropdown-item" href="/html/vehicle.html">Fleet</a>
+                </li>
+                <li><a class="dropdown-item" href="#top">link 2</a></li>
+                <li><hr class="dropdown-divider" /></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                >Services</a
+              >
+              <ul class="dropdown-menu shadow">
+                <li><a class="dropdown-item" href="/html/#top">Services</a></li>
+                <li><a class="dropdown-item" href="#top">link 2</a></li>
+
+                <li><hr class="dropdown-divider" /></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                >Contact Us</a
+              >
+              <ul class="dropdown-menu shadow">
+                <li>
+                  <a class="dropdown-item" href="/html/contact_us.html"
+                    >Contact Us</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#top">link 2</a></li>
+
+                <li><hr class="dropdown-divider" /></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                >About Us</a
+              >
+              <ul class="dropdown-menu shadow">
+                <li>
+                  <a class="dropdown-item" href="/html/about.html">About Us</a>
+                </li>
+                <li><a class="dropdown-item" href="/html/#top">link 2</a></li>
+
+                <li><hr class="dropdown-divider" /></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                >Blog</a
+              >
+              <ul class="dropdown-menu shadow">
+                <li>
+                  <a class="dropdown-item" href="/html/blog.html">Blog</a>
+                </li>
+                <li><a class="dropdown-item" href="/html/#top">link 2</a></li>
+                <li><hr class="dropdown-divider" /></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
     <section class="partnership_section">
       <div class="partnership_texts">
@@ -130,6 +160,9 @@
     </section>
 
     <section class="fleet_section">
+      <div class="svgtwo">
+        <img src="/images/Path 35.svg" alt="">
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -241,7 +274,7 @@
             </div>
           </div>
           <div class="col-lg-3">
-            <div class="single_footer_content">
+            <div class="single_footer_content recognition">
               <ul>
                 <li>About Us</li>
                 <li>Delivery Information</li>
@@ -252,11 +285,11 @@
             </div>
           </div>
           <div class="col-lg-3">
-            <div>
+            <div class="signature">
               <a href="#top"
                 ><img
                   class="footer_car"
-                  src="/images/white_car.png"
+                  src="/images/Mercedes-Benz-sprinter.jpg"
                   alt="car_image"
               /></a>
               <div class="design_by">Design & Developed By</div>
@@ -272,6 +305,9 @@
       </div>
     </footer>
 
+    <script src="./js/jquery-3.6.3.min.js"></script>
+
+    <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/script.js"></script>
   </body>
