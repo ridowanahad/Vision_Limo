@@ -107,6 +107,7 @@ body {
 }
 .navbar .navbar-brand {
   margin-left: 36px;
+  cursor: pointer;
 }
 
 /* home section start  */
