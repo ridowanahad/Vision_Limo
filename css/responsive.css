@@ -102,6 +102,11 @@
   .dollar {
     font-size: 2rem;
   }
+  .client_name_div {
+    position: absolute;
+    left: 6rem;
+    top: 0.5rem;
+  }
   .single_testimonial_content {
     padding: 25px;
   }
@@ -373,8 +378,8 @@
     margin-top: 0.6rem;
   }
   .client_name_div {
-    left: 7rem;
-    top: 1rem;
+    left: 8rem;
+    top: 1.5rem;
   }
   .testimonial_section .owl-carousel .owl-item .quote_img {
     width: 90%;
@@ -510,7 +515,7 @@
   }
   .client_name_div {
     left: 5rem;
-    top: 1rem;
+    top: 0.5rem;
   }
   .testimonial_section .owl-carousel .owl-item .quote_img {
     width: 95%;
@@ -555,11 +560,9 @@
   }
   footer .footer_car {
     max-width: 40%;
-    max-width: 30%;
-    margin: 2rem 0 0 9rem;
+    margin: 2rem 0 0 8rem;
   }
   footer .container {
-    /* width: 100%; */
     max-width: 100%;
   }
   .second_footer_col {
@@ -618,43 +621,6 @@
     right: 6rem;
   }
 }
-/* extra start */
-@media (min-width: 891px) and (max-width: 991px) {
-  footer .footer_car {
-    max-width: 30%;
-    margin: 2rem 0 0 11rem;
-  }
-  .client_details {
-    display: flex;
-  }
-}
-@media (min-width: 676px) and (max-width: 767px) {
-  .client_name_div {
-    left: 5rem;
-    top: 0rem;
-  }
-}
-@media (min-width: 320px) and (max-width: 425px) {
-  .testimonial_section .owl-carousel .owl-item .Client_image {
-    width: 25%;
-    border-radius: 6rem;
-  }
-
-  .single_testimonial_content {
-    padding: 21px;
-  }
-  .quote_image {
-    margin-top: 0.6rem;
-  }
-  .client_name_div {
-    left: 5rem;
-    top: 0.5rem;
-  }
-  .testimonial_section .owl-carousel .owl-item .quote_img {
-    width: 95%;
-  }
-}
-/* extra end  */
 @media (min-width: 992px) and (max-width: 1199px) {
   .navbar .navbar-brand {
     margin-left: 9px;
@@ -877,7 +843,7 @@
     font-size: 1.5rem;
   }
   #myBtnContainer .btn {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
   }
   .main {

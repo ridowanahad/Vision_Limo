@@ -17,9 +17,12 @@ $(document).ready(function () {
         items: 1,
       },
       676: {
+        items: 1,
+      },
+      768: {
         items: 2,
       },
-      1199: {
+      1200: {
         items: 3,
       },
     },
