@@ -16,8 +16,20 @@
   color: #ed6b4d;
   font-size: 1.2rem;
   font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.car_title_text {
+  flex-shrink: 0;
+  width: 60%;
 }
 
+.card_rent {
+  width: 40%;
+}
 .v_dollar {
   color: #ed6b4d;
   font-weight: 600;
@@ -54,31 +66,8 @@
 .book_now_button:hover {
   color: #ffffffdc;
 }
-.modal-dialog {
-  max-width: 55rem;
-  margin: 6rem auto;
-}
-
-.confirm_button {
-  text-align: center;
-  padding: 7px 10.5rem;
-  color: #ffffff;
-  border-width: 0px;
-  text-shadow: 0px 3px 6px #00000029;
-  background: transparent linear-gradient(90deg, #ed6b4d 0%, #ff6f00 100%) 0% 0%
-    no-repeat padding-box;
-  border-radius: 4px;
-  margin-top: 2.4rem;
-}
-.confirm_button:hover {
-  color: #ffffffdc;
-}
-
 .modal-body label {
   text-align: left;
-}
-.form-control {
-  margin-bottom: 0.5rem;
 }
 .modal-content {
   padding: 1rem;

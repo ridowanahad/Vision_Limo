@@ -4,7 +4,9 @@ body {
   font-family: "General Sans", sans-serif;
   position: relative;
 }
-
+.opacity-hide {
+  opacity: 0;
+}
 /* navbar styling start  */
 
 .navbar {
@@ -185,13 +187,9 @@ h4.small_text {
 .book-now-section .wrapper-content label {
   margin-top: 15px;
 }
-/* 
-.select_car_type {
-  padding: 1rem 0;
+.book_now_buttons {
+  display: flex;
 }
-.pick_up_location_div {
-  padding: 1rem 0rem;
-} */
 .drop_of_location_text {
   letter-spacing: 0px;
   color: #f9f9f9;
@@ -220,6 +218,32 @@ h4.small_text {
   background: #252e62;
   border-width: 0px;
   margin-top: 19px;
+}
+.book_now_div button:hover {
+  background: #252e62;
+  color: whitesmoke;
+}
+
+.confirm_button {
+  text-align: center;
+  padding: 7px 10.5rem;
+  color: #ffffff;
+  border-width: 0px;
+  text-shadow: 0px 3px 6px #00000029;
+  background: transparent linear-gradient(90deg, #ed6b4d 0%, #ff6f00 100%) 0% 0%
+    no-repeat padding-box;
+  border-radius: 4px;
+}
+.confirm_button:hover {
+  color: #ffffffdc;
+}
+.modal-dialog {
+  max-width: 55rem;
+  margin: 6rem auto;
+}
+
+.form-control {
+  margin-bottom: 0.5rem;
 }
 
 /* vehicle model text start  */
@@ -295,7 +319,7 @@ p.vehicle_model_paragraph {
 }
 
 /* Style the buttons */
-.btn {
+#myBtnContainer .btn {
   border: none;
   outline: none;
   padding: 12px 14px;
@@ -305,11 +329,11 @@ p.vehicle_model_paragraph {
   border-radius: 4px;
 }
 
-.btn:hover {
+#myBtnContainer .btn:hover {
   background-color: #ddd;
 }
 
-.btn.active {
+#myBtnContainer .btn.active {
   background-color: #252e62;
   color: white;
 }
@@ -337,6 +361,7 @@ button.book_now_number {
   background: #252e62;
   text-shadow: 0px 3px 6px #00000029;
   border-radius: 4px;
+  font-size: 1rem;
 }
 
 .car_details_text {
