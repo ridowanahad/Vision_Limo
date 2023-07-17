@@ -448,7 +448,10 @@
     <!-- Book now section end  -->
 
     <!-- vehicles section start  -->
-    <section class="vehicle_demo_section">
+
+    <!-- Updating to custom js tab to Bootstrap : -->
+
+    <div class="vehicle-demo-section">
       <div class="vehicle_models_texts">
         <h3 class="vehicle_model_text">Vehicle Models</h3>
         <h1 class="our_rental_fleet_text">OUR RENTAL FLEET</h1>
@@ -458,1614 +461,1743 @@
         </p>
       </div>
       <div class="background">
-        <div id="myBtnContainer">
-          <button
-            class="btn"
-            onclick="filterSelection('Mercedes_Benz_S_class')"
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              Mercedes Benz S class
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-cadillac-xts-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-cadillac-xts"
+              type="button"
+              role="tab"
+              aria-controls="pills-cadillac-xts"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Cadillac XTS
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-cadillac-xt6-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-cadillac-xt6"
+              type="button"
+              role="tab"
+              aria-controls="pills-cadillac-xt6"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Cadillac XT6
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-lexus-rx-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-lexus-rx"
+              type="button"
+              role="tab"
+              aria-controls="pills-lexus-rx"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Lexus RX
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-chevy-suburban-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-chevy-suburban"
+              type="button"
+              role="tab"
+              aria-controls="pills-chevy-suburban"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Chevy Suburban
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-cadillac_escalade-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-cadillac_escalade"
+              type="button"
+              role="tab"
+              aria-controls="pills-cadillac_escalade"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Cadillac Escalade
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-mercedes-benz-sprinter-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-mercedes-benz-sprinter"
+              type="button"
+              role="tab"
+              aria-controls="pills-mercedes-benz-sprinter"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Mercedes Benz sprinter
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-party_sprinter-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-party_sprinter"
+              type="button"
+              role="tab"
+              aria-controls="pills-party_sprinter"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Party Sprinter
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-party-bus-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-party-bus"
+              type="button"
+              role="tab"
+              aria-controls="pills-party-bus"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Party bus
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+            tabindex="0"
           >
-            Mercedes Benz S class
-          </button>
-          <button class="btn" onclick="filterSelection('Cadillac_XTS')">
-            Cadillac XTS
-          </button>
-          <button class="btn" onclick="filterSelection('Cadillac_XT6')">
-            Cadillac XT6
-          </button>
-          <button class="btn" onclick="filterSelection('Lexus_RX')">
-            Lexus RX
-          </button>
-          <button class="btn" onclick="filterSelection('Chevy_Suburban')">
-            Chevy Suburban
-          </button>
-          <button class="btn" onclick="filterSelection('Cadillac_Escalade')">
-            Cadillac Escalade
-          </button>
-          <button
-            class="btn"
-            onclick="filterSelection('Mercedes_Benz_sprinter')"
-          >
-            Mercedes Benz sprinter
-          </button>
-          <button class="btn" onclick="filterSelection('Party_Sprinter')">
-            Party Sprinter
-          </button>
-          <button class="btn" onclick="filterSelection('Party_bus')">
-            Party bus
-          </button>
-        </div>
-
-        <!-- Car Gallery Grid -->
-        <div class="main">
-          <div class="row">
-            <div class="col-lg-5">
-              <div class="column Mercedes_Benz_S_class car_details_text">
-                <h1 class="dollar">$ 120.40</h1>
-                <span class="rent_text">Rent per day</span>
-                <hr />
-                <ul class="car_features">
-                  <li>Model: Sedan</li>
-                  <li>Doors: 4</li>
-                  <li>Seats: 5</li>
-                  <li>Luggage: 2 Suitcases / 2 Bags</li>
-                  <li>Transmission: Automatic</li>
-                </ul>
-                <div class="book_now_buttons">
-                  <div class="book_now-body">
-                    <!-- start modal  -->
-                    <button
-                      type="button"
-                      class="btn book_now_text"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                      data-bs-whatever="@mdo"
-                    >
-                      Book Now
-                    </button>
-                    <div
-                      class="modal fade"
-                      id="exampleModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              New message
-                            </h5>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="row">
-                              <div class="col-lg-6">
-                                <form>
-                                  <div>
-                                    <label
-                                      for="Select Car Type name"
-                                      class="col-form-label"
-                                      >Select Car Type</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Pick-up Date name"
-                                      class="col-form-label"
-                                      >Pick-up Date</label
-                                    >
-                                    <input
-                                      type="date"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Pick-up Location name"
-                                      class="col-form-label"
-                                      >Pick-up Location</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Drop-of Location name"
-                                      class="col-form-label"
-                                      >Drop-of Location</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                </form>
-                              </div>
-                              <div class="col-lg-6">
-                                <form>
-                                  <div>
-                                    <label
-                                      for="recipient-name"
-                                      class="col-form-label"
-                                      >Name</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label for="Email" class="col-form-label"
-                                      >Email</label
-                                    >
-                                    <input
-                                      type="email"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Phone Number"
-                                      class="col-form-label"
-                                      >Phone Number</label
-                                    >
-                                    <input
-                                      type="number"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-
-                                  <div>
-                                    <label
-                                      for="Phone Number "
-                                      class="col-form-label opacity-hide"
-                                    >
-                                      lll
-                                    </label>
-
-                                    <button
-                                      type="button"
-                                      class="btn confirm_button"
-                                    >
-                                      CONFIRM
-                                    </button>
-                                  </div>
-                                </form>
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="Mercedes_Benz_S_class car_details_text">
+                  <h1 class="dollar">$ 120.40</h1>
+                  <span class="rent_text">Rent per day</span>
+                  <hr />
+                  <ul class="car_features">
+                    <li>Model: Sedan</li>
+                    <li>Doors: 4</li>
+                    <li>Seats: 5</li>
+                    <li>Luggage: 2 Suitcases / 2 Bags</li>
+                    <li>Transmission: Automatic</li>
+                  </ul>
+                  <div class="book_now_buttons">
+                    <div class="book_now-body">
+                      <!-- start modal  -->
+                      <button
+                        type="button"
+                        class="btn book_now_text"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        data-bs-whatever="@mdo"
+                      >
+                        BOOK NOW
+                      </button>
+                      <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">
+                                New message
+                              </h5>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <form>
+                                    <div>
+                                      <label
+                                        for="Select Car Type name"
+                                        class="col-form-label"
+                                        >Select Car Type</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Pick-up Date name"
+                                        class="col-form-label"
+                                        >Pick-up Date</label
+                                      >
+                                      <input
+                                        type="date"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Pick-up Location name"
+                                        class="col-form-label"
+                                        >Pick-up Location</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Drop-of Location name"
+                                        class="col-form-label"
+                                        >Drop-of Location</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                  </form>
+                                </div>
+                                <div class="col-lg-6">
+                                  <form>
+                                    <div>
+                                      <label
+                                        for="recipient-name"
+                                        class="col-form-label"
+                                        >Name</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        name="fullName"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label for="Email" class="col-form-label"
+                                        >Email</label
+                                      >
+                                      <input
+                                        type="email"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Phone Number"
+                                        class="col-form-label"
+                                        >Phone Number</label
+                                      >
+                                      <input
+                                        type="number"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <button
+                                        type="button"
+                                        class="btn confirm_button"
+                                      >
+                                        CONFIRM
+                                      </button>
+                                    </div>
+                                  </form>
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <a href="#Call_now"
+                      ><button class="book_now_number">09964543465</button></a
+                    >
                   </div>
-                  <a href="#Call_now"
-                    ><button class="book_now_number">09964543465</button></a
-                  >
-                </div>
-                <div class="details_main"></div>
-              </div>
-            </div>
-            <div class="col-lg-7">
-              <div class="column Mercedes_Benz_S_class">
-                <div class="content">
-                  <img
-                    class="mercedes_img"
-                    src="/images/Mercedes Benz S class.jpg"
-                    alt="Mercedes_Benz_S_class"
-                  />
+                  <div class="details_main"></div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-5">
-              <div class="column Cadillac_XTS car_details_text">
-                <h1 class="dollar">$ 90.50</h1>
-                <span class="rent_text">Rent per day</span>
-                <hr />
-                <ul class="car_features">
-                  <li>Model: Cadillac_XTS</li>
-                  <li>Doors: 4</li>
-                  <li>Seats: 5</li>
-                  <li>Luggage: 3 Suitcases / 3 Bags</li>
-                  <li>Transmission: Automatic</li>
-                </ul>
-                <div class="book_now_buttons">
-                  <div class="book_now-body">
-                    <!-- start modal  -->
-                    <button
-                      type="button"
-                      class="btn book_now_text"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                      data-bs-whatever="@mdo"
-                    >
-                      Book Now
-                    </button>
-                    <div
-                      class="modal fade"
-                      id="exampleModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              New message
-                            </h5>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="row">
-                              <div class="col-lg-6">
-                                <form>
-                                  <div>
-                                    <label
-                                      for="Select Car Type name"
-                                      class="col-form-label"
-                                      >Select Car Type</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Pick-up Date name"
-                                      class="col-form-label"
-                                      >Pick-up Date</label
-                                    >
-                                    <input
-                                      type="date"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Pick-up Location name"
-                                      class="col-form-label"
-                                      >Pick-up Location</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Drop-of Location name"
-                                      class="col-form-label"
-                                      >Drop-of Location</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                </form>
-                              </div>
-                              <div class="col-lg-6">
-                                <form>
-                                  <div>
-                                    <label
-                                      for="recipient-name"
-                                      class="col-form-label"
-                                      >Name</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label for="Email" class="col-form-label"
-                                      >Email</label
-                                    >
-                                    <input
-                                      type="email"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Phone Number"
-                                      class="col-form-label"
-                                      >Phone Number</label
-                                    >
-                                    <input
-                                      type="number"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-
-                                  <div>
-                                    <label
-                                      for="Phone Number "
-                                      class="col-form-label opacity-hide"
-                                    >
-                                      lll
-                                    </label>
-
-                                    <button
-                                      type="button"
-                                      class="btn confirm_button"
-                                    >
-                                      CONFIRM
-                                    </button>
-                                  </div>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+              <div class="col-lg-7">
+                <div class="Mercedes_Benz_S_class">
+                  <div class="content">
+                    <img
+                      class="mercedes_img"
+                      src="http://127.0.0.1:8000/img/limo/Mercedes Benz S class.jpg"
+                      alt="Mercedes_Benz_S_class"
+                    />
                   </div>
-                  <a href="#Call_now"
-                    ><button class="book_now_number">09964543465</button></a
-                  >
-                </div>
-                <div class="details_main"></div>
-              </div>
-            </div>
-            <div class="col-lg-7">
-              <div class="column Cadillac_XTS">
-                <div class="content">
-                  <img src="/images/Cadillac XTS.jpg" alt="Cadillac_XTS" />
                 </div>
               </div>
             </div>
-            <div class="col-lg-5">
-              <div class="column Cadillac_XT6 car_details_text">
-                <h1 class="dollar">$ 40.40</h1>
-                <span class="rent_text">Rent per day</span>
-                <hr />
-                <ul class="car_features">
-                  <li>Model: Sedan</li>
-                  <li>Doors: 4</li>
-                  <li>Seats: 5</li>
-                  <li>Luggage: 2 Suitcases / 2 Bags</li>
-                  <li>Transmission: Manual</li>
-                </ul>
-                <div class="book_now_buttons">
-                  <div class="book_now-body">
-                    <!-- start modal  -->
-                    <button
-                      type="button"
-                      class="btn book_now_text"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                      data-bs-whatever="@mdo"
-                    >
-                      Book Now
-                    </button>
-                    <div
-                      class="modal fade"
-                      id="exampleModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              New message
-                            </h5>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="row">
-                              <div class="col-lg-6">
-                                <form>
-                                  <div>
-                                    <label
-                                      for="Select Car Type name"
-                                      class="col-form-label"
-                                      >Select Car Type</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Pick-up Date name"
-                                      class="col-form-label"
-                                      >Pick-up Date</label
-                                    >
-                                    <input
-                                      type="date"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Pick-up Location name"
-                                      class="col-form-label"
-                                      >Pick-up Location</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Drop-of Location name"
-                                      class="col-form-label"
-                                      >Drop-of Location</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                </form>
-                              </div>
-                              <div class="col-lg-6">
-                                <form>
-                                  <div>
-                                    <label
-                                      for="recipient-name"
-                                      class="col-form-label"
-                                      >Name</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label for="Email" class="col-form-label"
-                                      >Email</label
-                                    >
-                                    <input
-                                      type="email"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Phone Number"
-                                      class="col-form-label"
-                                      >Phone Number</label
-                                    >
-                                    <input
-                                      type="number"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-
-                                  <div>
-                                    <label
-                                      for="Phone Number "
-                                      class="col-form-label opacity-hide"
-                                    >
-                                      lll
-                                    </label>
-
-                                    <button
-                                      type="button"
-                                      class="btn confirm_button"
-                                    >
-                                      CONFIRM
-                                    </button>
-                                  </div>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#Call_now"
-                    ><button class="book_now_number">09964543465</button></a
-                  >
-                </div>
-                <div class="details_main"></div>
-              </div>
-            </div>
-            <div class="col-lg-7">
-              <div class="column Cadillac_XT6">
-                <div class="content">
-                  <img src="/images/Cadillac XT6.jpg" alt="Cadillac_XT6" />
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5">
-              <div class="column Lexus_RX car_details_text">
-                <h1 class="dollar">$ 120.40</h1>
-                <span class="rent_text">Rent per day</span>
-                <hr />
-                <ul class="car_features">
-                  <li>Model: Sedan</li>
-                  <li>Doors: 4</li>
-                  <li>Seats: 5</li>
-                  <li>Luggage: 2 Suitcases / 2 Bags</li>
-                  <li>Transmission: Automatic</li>
-                </ul>
-                <div class="book_now_buttons">
-                  <div class="book_now-body">
-                    <!-- start modal  -->
-                    <button
-                      type="button"
-                      class="btn book_now_text"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                      data-bs-whatever="@mdo"
-                    >
-                      Book Now
-                    </button>
-                    <div
-                      class="modal fade"
-                      id="exampleModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              New message
-                            </h5>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="row">
-                              <div class="col-lg-6">
-                                <form>
-                                  <div>
-                                    <label
-                                      for="Select Car Type name"
-                                      class="col-form-label"
-                                      >Select Car Type</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Pick-up Date name"
-                                      class="col-form-label"
-                                      >Pick-up Date</label
-                                    >
-                                    <input
-                                      type="date"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Pick-up Location name"
-                                      class="col-form-label"
-                                      >Pick-up Location</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Drop-of Location name"
-                                      class="col-form-label"
-                                      >Drop-of Location</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                </form>
-                              </div>
-                              <div class="col-lg-6">
-                                <form>
-                                  <div>
-                                    <label
-                                      for="recipient-name"
-                                      class="col-form-label"
-                                      >Name</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label for="Email" class="col-form-label"
-                                      >Email</label
-                                    >
-                                    <input
-                                      type="email"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Phone Number"
-                                      class="col-form-label"
-                                      >Phone Number</label
-                                    >
-                                    <input
-                                      type="number"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-
-                                  <div>
-                                    <label
-                                      for="Phone Number "
-                                      class="col-form-label opacity-hide"
-                                    >
-                                      lll
-                                    </label>
-
-                                    <button
-                                      type="button"
-                                      class="btn confirm_button"
-                                    >
-                                      CONFIRM
-                                    </button>
-                                  </div>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#Call_now"
-                    ><button class="book_now_number">09964543465</button></a
-                  >
-                </div>
-                <div class="details_main"></div>
-              </div>
-            </div>
-            <div class="col-lg-7">
-              <div class="column Lexus_RX">
-                <div class="content">
-                  <img src="/images/Lexus RX.jpg" alt="Lexus_RX" />
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5">
-              <div class="column Chevy_Suburban car_details_text">
-                <h1 class="dollar">$ 70.40</h1>
-                <span class="rent_text">Rent per day</span>
-                <hr />
-                <ul class="car_features">
-                  <li>Model: Chevy Suburban</li>
-                  <li>Doors: 4</li>
-                  <li>Seats: 5</li>
-                  <li>Luggage: 2 Suitcases / 1 Bags</li>
-                  <li>Transmission: Manual</li>
-                </ul>
-                <div class="book_now_buttons">
-                  <div class="book_now-body">
-                    <!-- start modal  -->
-                    <button
-                      type="button"
-                      class="btn book_now_text"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                      data-bs-whatever="@mdo"
-                    >
-                      Book Now
-                    </button>
-                    <div
-                      class="modal fade"
-                      id="exampleModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              New message
-                            </h5>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="row">
-                              <div class="col-lg-6">
-                                <form>
-                                  <div>
-                                    <label
-                                      for="Select Car Type name"
-                                      class="col-form-label"
-                                      >Select Car Type</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Pick-up Date name"
-                                      class="col-form-label"
-                                      >Pick-up Date</label
-                                    >
-                                    <input
-                                      type="date"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Pick-up Location name"
-                                      class="col-form-label"
-                                      >Pick-up Location</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Drop-of Location name"
-                                      class="col-form-label"
-                                      >Drop-of Location</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                </form>
-                              </div>
-                              <div class="col-lg-6">
-                                <form>
-                                  <div>
-                                    <label
-                                      for="recipient-name"
-                                      class="col-form-label"
-                                      >Name</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label for="Email" class="col-form-label"
-                                      >Email</label
-                                    >
-                                    <input
-                                      type="email"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Phone Number"
-                                      class="col-form-label"
-                                      >Phone Number</label
-                                    >
-                                    <input
-                                      type="number"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-
-                                  <div>
-                                    <label
-                                      for="Phone Number "
-                                      class="col-form-label opacity-hide"
-                                    >
-                                      lll
-                                    </label>
-
-                                    <button
-                                      type="button"
-                                      class="btn confirm_button"
-                                    >
-                                      CONFIRM
-                                    </button>
-                                  </div>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#Call_now"
-                    ><button class="book_now_number">09964543465</button></a
-                  >
-                </div>
-                <div class="details_main"></div>
-              </div>
-            </div>
-            <div class="col-lg-7">
-              <div class="column Chevy_Suburban">
-                <div class="content">
-                  <img
-                    class="chevy_img"
-                    src="/images/Chevy Suburban.jpg"
-                    alt="Chevy_Suburban"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5">
-              <div class="column Cadillac_Escalade car_details_text">
-                <h1 class="dollar">$ 170.40</h1>
-                <span class="rent_text">Rent per day</span>
-                <hr />
-                <ul class="car_features">
-                  <li>Model: Cadillac_Escalade</li>
-                  <li>Doors: 4</li>
-                  <li>Seats: 8</li>
-                  <li>Luggage: 2 Suitcases / 4 Bags</li>
-                  <li>Transmission: Manual</li>
-                </ul>
-                <div class="book_now_buttons">
-                  <div class="book_now-body">
-                    <!-- start modal  -->
-                    <button
-                      type="button"
-                      class="btn book_now_text"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                      data-bs-whatever="@mdo"
-                    >
-                      Book Now
-                    </button>
-                    <div
-                      class="modal fade"
-                      id="exampleModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              New message
-                            </h5>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="row">
-                              <div class="col-lg-6">
-                                <form>
-                                  <div>
-                                    <label
-                                      for="Select Car Type name"
-                                      class="col-form-label"
-                                      >Select Car Type</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Pick-up Date name"
-                                      class="col-form-label"
-                                      >Pick-up Date</label
-                                    >
-                                    <input
-                                      type="date"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Pick-up Location name"
-                                      class="col-form-label"
-                                      >Pick-up Location</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Drop-of Location name"
-                                      class="col-form-label"
-                                      >Drop-of Location</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                </form>
-                              </div>
-                              <div class="col-lg-6">
-                                <form>
-                                  <div>
-                                    <label
-                                      for="recipient-name"
-                                      class="col-form-label"
-                                      >Name</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label for="Email" class="col-form-label"
-                                      >Email</label
-                                    >
-                                    <input
-                                      type="email"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Phone Number"
-                                      class="col-form-label"
-                                      >Phone Number</label
-                                    >
-                                    <input
-                                      type="number"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-
-                                  <div>
-                                    <label
-                                      for="Phone Number "
-                                      class="col-form-label opacity-hide"
-                                    >
-                                      lll
-                                    </label>
-
-                                    <button
-                                      type="button"
-                                      class="btn confirm_button"
-                                    >
-                                      CONFIRM
-                                    </button>
-                                  </div>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#Call_now"
-                    ><button class="book_now_number">09964543465</button></a
-                  >
-                </div>
-                <div class="details_main"></div>
-              </div>
-            </div>
-            <div class="col-lg-7">
-              <div class="column Cadillac_Escalade">
-                <div class="content">
-                  <img
-                    src="/images/Cadillac_Escalade.jpeg"
-                    alt="Cadillac_Escalade"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5">
-              <div class="column Mercedes_Benz_sprinter car_details_text">
-                <h1 class="dollar">$ 190.40</h1>
-                <span class="rent_text">Rent per day</span>
-                <hr />
-                <ul class="car_features">
-                  <li>Model: Mercedes_Benz_sprinter</li>
-                  <li>Doors: 4</li>
-                  <li>Seats: 5</li>
-                  <li>Luggage: 2 Suitcases / 4 Bags</li>
-                  <li>Transmission: Manual</li>
-                </ul>
-                <div class="book_now_buttons">
-                  <div class="book_now-body">
-                    <!-- start modal  -->
-                    <button
-                      type="button"
-                      class="btn book_now_text"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                      data-bs-whatever="@mdo"
-                    >
-                      Book Now
-                    </button>
-                    <div
-                      class="modal fade"
-                      id="exampleModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              New message
-                            </h5>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="row">
-                              <div class="col-lg-6">
-                                <form>
-                                  <div>
-                                    <label
-                                      for="Select Car Type name"
-                                      class="col-form-label"
-                                      >Select Car Type</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Pick-up Date name"
-                                      class="col-form-label"
-                                      >Pick-up Date</label
-                                    >
-                                    <input
-                                      type="date"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Pick-up Location name"
-                                      class="col-form-label"
-                                      >Pick-up Location</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Drop-of Location name"
-                                      class="col-form-label"
-                                      >Drop-of Location</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                </form>
-                              </div>
-                              <div class="col-lg-6">
-                                <form>
-                                  <div>
-                                    <label
-                                      for="recipient-name"
-                                      class="col-form-label"
-                                      >Name</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label for="Email" class="col-form-label"
-                                      >Email</label
-                                    >
-                                    <input
-                                      type="email"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Phone Number"
-                                      class="col-form-label"
-                                      >Phone Number</label
-                                    >
-                                    <input
-                                      type="number"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-
-                                  <div>
-                                    <label
-                                      for="Phone Number "
-                                      class="col-form-label opacity-hide"
-                                    >
-                                      lll
-                                    </label>
-
-                                    <button
-                                      type="button"
-                                      class="btn confirm_button"
-                                    >
-                                      CONFIRM
-                                    </button>
-                                  </div>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#Call_now"
-                    ><button class="book_now_number">09964543465</button></a
-                  >
-                </div>
-                <div class="details_main"></div>
-              </div>
-            </div>
-            <div class="col-lg-7">
-              <div class="column Mercedes_Benz_sprinter">
-                <div class="content">
-                  <img
-                    src="/images/Mercedes-Benz-sprinter.jpg"
-                    alt="Mercedes_Benz_sprinter"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5">
-              <div class="column Party_Sprinter car_details_text">
-                <h1 class="dollar">$ 170.40</h1>
-                <span class="rent_text">Rent per day</span>
-                <hr />
-                <ul class="car_features">
-                  <li>Model: Party Sprinter</li>
-                  <li>Doors: 2</li>
-                  <li>Seats: 2</li>
-                  <li>Luggage: 2 Suitcases / 2 Bags</li>
-                  <li>Transmission: Automatic</li>
-                </ul>
-                <div class="book_now_buttons">
-                  <div class="book_now-body">
-                    <!-- start modal  -->
-                    <button
-                      type="button"
-                      class="btn book_now_text"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                      data-bs-whatever="@mdo"
-                    >
-                      Book Now
-                    </button>
-                    <div
-                      class="modal fade"
-                      id="exampleModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              New message
-                            </h5>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="row">
-                              <div class="col-lg-6">
-                                <form>
-                                  <div>
-                                    <label
-                                      for="Select Car Type name"
-                                      class="col-form-label"
-                                      >Select Car Type</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Pick-up Date name"
-                                      class="col-form-label"
-                                      >Pick-up Date</label
-                                    >
-                                    <input
-                                      type="date"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Pick-up Location name"
-                                      class="col-form-label"
-                                      >Pick-up Location</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Drop-of Location name"
-                                      class="col-form-label"
-                                      >Drop-of Location</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                </form>
-                              </div>
-                              <div class="col-lg-6">
-                                <form>
-                                  <div>
-                                    <label
-                                      for="recipient-name"
-                                      class="col-form-label"
-                                      >Name</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label for="Email" class="col-form-label"
-                                      >Email</label
-                                    >
-                                    <input
-                                      type="email"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Phone Number"
-                                      class="col-form-label"
-                                      >Phone Number</label
-                                    >
-                                    <input
-                                      type="number"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-
-                                  <div>
-                                    <label
-                                      for="Phone Number "
-                                      class="col-form-label opacity-hide"
-                                    >
-                                      lll
-                                    </label>
-
-                                    <button
-                                      type="button"
-                                      class="btn confirm_button"
-                                    >
-                                      CONFIRM
-                                    </button>
-                                  </div>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#Call_now"
-                    ><button class="book_now_number">09964543465</button></a
-                  >
-                </div>
-                <div class="details_main"></div>
-              </div>
-            </div>
-            <div class="col-lg-7">
-              <div class="column Party_Sprinter">
-                <div class="content">
-                  <img src="/images/Party-Sprinter.jpg" alt="Party_Sprinter" />
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5">
-              <div class="column Party_bus car_details_text">
-                <h1 class="dollar">$ 200.00</h1>
-                <span class="rent_text">Rent per day</span>
-                <hr />
-                <ul class="car_features">
-                  <li>Model: Party_bus</li>
-                  <li>Doors: 6</li>
-                  <li>Seats: 12</li>
-                  <li>Luggage: 6 Suitcases</li>
-                  <li>Transmission: Manual</li>
-                </ul>
-                <div class="book_now_buttons">
-                  <div class="book_now-body">
-                    <!-- start modal  -->
-                    <button
-                      type="button"
-                      class="btn book_now_text"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                      data-bs-whatever="@mdo"
-                    >
-                      Book Now
-                    </button>
-                    <div
-                      class="modal fade"
-                      id="exampleModal"
-                      tabindex="-1"
-                      aria-labelledby="exampleModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                              New message
-                            </h5>
-                            <button
-                              type="button"
-                              class="btn-close"
-                              data-bs-dismiss="modal"
-                              aria-label="Close"
-                            ></button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="row">
-                              <div class="col-lg-6">
-                                <form>
-                                  <div>
-                                    <label
-                                      for="Select Car Type name"
-                                      class="col-form-label"
-                                      >Select Car Type</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Pick-up Date name"
-                                      class="col-form-label"
-                                      >Pick-up Date</label
-                                    >
-                                    <input
-                                      type="date"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Pick-up Location name"
-                                      class="col-form-label"
-                                      >Pick-up Location</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Drop-of Location name"
-                                      class="col-form-label"
-                                      >Drop-of Location</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                </form>
-                              </div>
-                              <div class="col-lg-6">
-                                <form>
-                                  <div>
-                                    <label
-                                      for="recipient-name"
-                                      class="col-form-label"
-                                      >Name</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label for="Email" class="col-form-label"
-                                      >Email</label
-                                    >
-                                    <input
-                                      type="email"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div>
-                                    <label
-                                      for="Phone Number"
-                                      class="col-form-label"
-                                      >Phone Number</label
-                                    >
-                                    <input
-                                      type="number"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-
-                                  <div>
-                                    <label
-                                      for="Phone Number "
-                                      class="col-form-label opacity-hide"
-                                    >
-                                      lll
-                                    </label>
-
-                                    <button
-                                      type="button"
-                                      class="btn confirm_button"
-                                    >
-                                      CONFIRM
-                                    </button>
-                                  </div>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#Call_now"
-                    ><button class="book_now_number">09964543465</button></a
-                  >
-                </div>
-                <div class="details_main"></div>
-              </div>
-            </div>
-            <div class="col-lg-7">
-              <div class="column Party_bus">
-                <div class="content">
-                  <img src="/images/Party-bus.jpg" alt="Party_bus" />
-                </div>
-              </div>
-            </div>
-            <!-- END GRID -->
           </div>
-          <!-- END MAIN -->
+          <div
+            class="tab-pane fade"
+            id="pills-cadillac-xts"
+            role="tabpanel"
+            aria-labelledby="pills-cadillac-xts-tab"
+            tabindex="0"
+          >
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="Cadillac_XTS car_details_text">
+                  <h1 class="dollar">$ 90.50</h1>
+                  <span class="rent_text">Rent per day</span>
+                  <hr />
+                  <ul class="car_features">
+                    <li>Model: Cadillac_XTS</li>
+                    <li>Doors: 4</li>
+                    <li>Seats: 5</li>
+                    <li>Luggage: 3 Suitcases / 3 Bags</li>
+                    <li>Transmission: Automatic</li>
+                  </ul>
+                  <div class="book_now_buttons">
+                    <div class="book_now-body">
+                      <!-- start modal  -->
+                      <button
+                        type="button"
+                        class="btn book_now_text"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        data-bs-whatever="@mdo"
+                      >
+                        BOOK NOW
+                      </button>
+                      <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">
+                                New message
+                              </h5>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <form>
+                                    <div>
+                                      <label
+                                        for="Select Car Type name"
+                                        class="col-form-label"
+                                        >Select Car Type</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Pick-up Date name"
+                                        class="col-form-label"
+                                        >Pick-up Date</label
+                                      >
+                                      <input
+                                        type="date"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Pick-up Location name"
+                                        class="col-form-label"
+                                        >Pick-up Location</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Drop-of Location name"
+                                        class="col-form-label"
+                                        >Drop-of Location</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                  </form>
+                                </div>
+                                <div class="col-lg-6">
+                                  <form>
+                                    <div>
+                                      <label
+                                        for="recipient-name"
+                                        class="col-form-label"
+                                        >Name</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label for="Email" class="col-form-label"
+                                        >Email</label
+                                      >
+                                      <input
+                                        type="email"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Phone Number"
+                                        class="col-form-label"
+                                        >Phone Number</label
+                                      >
+                                      <input
+                                        type="number"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <button
+                                        type="button"
+                                        class="btn confirm_button"
+                                      >
+                                        CONFIRM
+                                      </button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#Call_now"
+                      ><button class="book_now_number">09964543465</button></a
+                    >
+                  </div>
+                  <div class="details_main"></div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="Cadillac_XTS">
+                  <div class="content">
+                    <img
+                      src="http://127.0.0.1:8000/img/limo/Cadillac XTS.jpg"
+                      alt="Cadillac_XTS"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-cadillac-xt6"
+            role="tabpanel"
+            aria-labelledby="pills-cadillac-xt6-tab"
+            tabindex="0"
+          >
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="Cadillac_XT6 car_details_text">
+                  <h1 class="dollar">$ 40.40</h1>
+                  <span class="rent_text">Rent per day</span>
+                  <hr />
+                  <ul class="car_features">
+                    <li>Model: Sedan</li>
+                    <li>Doors: 4</li>
+                    <li>Seats: 5</li>
+                    <li>Luggage: 2 Suitcases / 2 Bags</li>
+                    <li>Transmission: Manual</li>
+                  </ul>
+                  <div class="book_now_buttons">
+                    <div class="book_now-body">
+                      <!-- start modal  -->
+                      <button
+                        type="button"
+                        class="btn book_now_text"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        data-bs-whatever="@mdo"
+                      >
+                        BOOK NOW
+                      </button>
+                      <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">
+                                New message
+                              </h5>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <form>
+                                    <div>
+                                      <label
+                                        for="Select Car Type name"
+                                        class="col-form-label"
+                                        >Select Car Type</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Pick-up Date name"
+                                        class="col-form-label"
+                                        >Pick-up Date</label
+                                      >
+                                      <input
+                                        type="date"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Pick-up Location name"
+                                        class="col-form-label"
+                                        >Pick-up Location</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Drop-of Location name"
+                                        class="col-form-label"
+                                        >Drop-of Location</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                  </form>
+                                </div>
+                                <div class="col-lg-6">
+                                  <form>
+                                    <div>
+                                      <label
+                                        for="recipient-name"
+                                        class="col-form-label"
+                                        >Name</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label for="Email" class="col-form-label"
+                                        >Email</label
+                                      >
+                                      <input
+                                        type="email"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Phone Number"
+                                        class="col-form-label"
+                                        >Phone Number</label
+                                      >
+                                      <input
+                                        type="number"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <button
+                                        type="button"
+                                        class="btn confirm_button"
+                                      >
+                                        CONFIRM
+                                      </button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#Call_now"
+                      ><button class="book_now_number">09964543465</button></a
+                    >
+                  </div>
+                  <div class="details_main"></div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="Cadillac_XT6">
+                  <div class="content">
+                    <img
+                      src="http://127.0.0.1:8000/img/limo/Cadillac XT6.jpg"
+                      alt="Cadillac_XT6"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-lexus-rx"
+            role="tabpanel"
+            aria-labelledby="pills-lexus-rx-tab"
+            tabindex="0"
+          >
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="Lexus_RX car_details_text">
+                  <h1 class="dollar">$ 120.40</h1>
+                  <span class="rent_text">Rent per day</span>
+                  <hr />
+                  <ul class="car_features">
+                    <li>Model: Sedan</li>
+                    <li>Doors: 4</li>
+                    <li>Seats: 5</li>
+                    <li>Luggage: 2 Suitcases / 2 Bags</li>
+                    <li>Transmission: Automatic</li>
+                  </ul>
+                  <div class="book_now_buttons">
+                    <div class="book_now-body">
+                      <!-- start modal  -->
+                      <button
+                        type="button"
+                        class="btn book_now_text"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        data-bs-whatever="@mdo"
+                      >
+                        BOOK NOW
+                      </button>
+                      <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">
+                                New message
+                              </h5>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <form>
+                                    <div>
+                                      <label
+                                        for="Select Car Type name"
+                                        class="col-form-label"
+                                        >Select Car Type</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Pick-up Date name"
+                                        class="col-form-label"
+                                        >Pick-up Date</label
+                                      >
+                                      <input
+                                        type="date"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Pick-up Location name"
+                                        class="col-form-label"
+                                        >Pick-up Location</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Drop-of Location name"
+                                        class="col-form-label"
+                                        >Drop-of Location</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                  </form>
+                                </div>
+                                <div class="col-lg-6">
+                                  <form>
+                                    <div>
+                                      <label
+                                        for="recipient-name"
+                                        class="col-form-label"
+                                        >Name</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label for="Email" class="col-form-label"
+                                        >Email</label
+                                      >
+                                      <input
+                                        type="email"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Phone Number"
+                                        class="col-form-label"
+                                        >Phone Number</label
+                                      >
+                                      <input
+                                        type="number"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <button
+                                        type="button"
+                                        class="btn confirm_button"
+                                      >
+                                        CONFIRM
+                                      </button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#Call_now"
+                      ><button class="book_now_number">09964543465</button></a
+                    >
+                  </div>
+                  <div class="details_main"></div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="Lexus_RX">
+                  <div class="content">
+                    <img
+                      src="http://127.0.0.1:8000/img/limo/Lexus RX.jpg"
+                      alt="Lexus_RX"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-chevy-suburban"
+            role="tabpanel"
+            aria-labelledby="pills-chevy-suburban-tab"
+            tabindex="0"
+          >
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="Chevy_Suburban car_details_text">
+                  <h1 class="dollar">$ 70.40</h1>
+                  <span class="rent_text">Rent per day</span>
+                  <hr />
+                  <ul class="car_features">
+                    <li>Model: Chevy Suburban</li>
+                    <li>Doors: 4</li>
+                    <li>Seats: 5</li>
+                    <li>Luggage: 2 Suitcases / 1 Bags</li>
+                    <li>Transmission: Manual</li>
+                  </ul>
+                  <div class="book_now_buttons">
+                    <div class="book_now-body">
+                      <!-- start modal  -->
+                      <button
+                        type="button"
+                        class="btn book_now_text"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        data-bs-whatever="@mdo"
+                      >
+                        BOOK NOW
+                      </button>
+                      <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">
+                                New message
+                              </h5>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <form>
+                                    <div>
+                                      <label
+                                        for="Select Car Type name"
+                                        class="col-form-label"
+                                        >Select Car Type</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Pick-up Date name"
+                                        class="col-form-label"
+                                        >Pick-up Date</label
+                                      >
+                                      <input
+                                        type="date"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Pick-up Location name"
+                                        class="col-form-label"
+                                        >Pick-up Location</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Drop-of Location name"
+                                        class="col-form-label"
+                                        >Drop-of Location</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                  </form>
+                                </div>
+                                <div class="col-lg-6">
+                                  <form>
+                                    <div>
+                                      <label
+                                        for="recipient-name"
+                                        class="col-form-label"
+                                        >Name</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label for="Email" class="col-form-label"
+                                        >Email</label
+                                      >
+                                      <input
+                                        type="email"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Phone Number"
+                                        class="col-form-label"
+                                        >Phone Number</label
+                                      >
+                                      <input
+                                        type="number"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <button
+                                        type="button"
+                                        class="btn confirm_button"
+                                      >
+                                        CONFIRM
+                                      </button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#Call_now"
+                      ><button class="book_now_number">09964543465</button></a
+                    >
+                  </div>
+                  <div class="details_main"></div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="Chevy_Suburban">
+                  <div class="content">
+                    <img
+                      class="chevy_img"
+                      src="http://127.0.0.1:8000/img/limo/Chevy Suburban.jpg"
+                      alt="Chevy_Suburban"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-cadillac_escalade"
+            role="tabpanel"
+            aria-labelledby="pills-cadillac_escalade-tab"
+            tabindex="0"
+          >
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="Cadillac_Escalade car_details_text">
+                  <h1 class="dollar">$ 170.40</h1>
+                  <span class="rent_text">Rent per day</span>
+                  <hr />
+                  <ul class="car_features">
+                    <li>Model: Cadillac_Escalade</li>
+                    <li>Doors: 4</li>
+                    <li>Seats: 8</li>
+                    <li>Luggage: 2 Suitcases / 4 Bags</li>
+                    <li>Transmission: Manual</li>
+                  </ul>
+                  <div class="book_now_buttons">
+                    <div class="book_now-body">
+                      <!-- start modal  -->
+                      <button
+                        type="button"
+                        class="btn book_now_text"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        data-bs-whatever="@mdo"
+                      >
+                        BOOK NOW
+                      </button>
+                      <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">
+                                New message
+                              </h5>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <form>
+                                    <div>
+                                      <label
+                                        for="Select Car Type name"
+                                        class="col-form-label"
+                                        >Select Car Type</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Pick-up Date name"
+                                        class="col-form-label"
+                                        >Pick-up Date</label
+                                      >
+                                      <input
+                                        type="date"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Pick-up Location name"
+                                        class="col-form-label"
+                                        >Pick-up Location</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Drop-of Location name"
+                                        class="col-form-label"
+                                        >Drop-of Location</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                  </form>
+                                </div>
+                                <div class="col-lg-6">
+                                  <form>
+                                    <div>
+                                      <label
+                                        for="recipient-name"
+                                        class="col-form-label"
+                                        >Name</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label for="Email" class="col-form-label"
+                                        >Email</label
+                                      >
+                                      <input
+                                        type="email"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Phone Number"
+                                        class="col-form-label"
+                                        >Phone Number</label
+                                      >
+                                      <input
+                                        type="number"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <button
+                                        type="button"
+                                        class="btn confirm_button"
+                                      >
+                                        CONFIRM
+                                      </button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#Call_now"
+                      ><button class="book_now_number">09964543465</button></a
+                    >
+                  </div>
+                  <div class="details_main"></div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="Cadillac_Escalade">
+                  <div class="content">
+                    <img
+                      src="http://127.0.0.1:8000/img/limo/Cadillac_Escalade.jpeg"
+                      alt="Cadillac_Escalade"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-mercedes-benz-sprinter"
+            role="tabpanel"
+            aria-labelledby="pills-mercedes-benz-sprinter-tab"
+            tabindex="0"
+          >
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="Mercedes_Benz_sprinter car_details_text">
+                  <h1 class="dollar">$ 190.40</h1>
+                  <span class="rent_text">Rent per day</span>
+                  <hr />
+                  <ul class="car_features">
+                    <li>Model: Mercedes_Benz_sprinter</li>
+                    <li>Doors: 4</li>
+                    <li>Seats: 5</li>
+                    <li>Luggage: 2 Suitcases / 4 Bags</li>
+                    <li>Transmission: Manual</li>
+                  </ul>
+                  <div class="book_now_buttons">
+                    <div class="book_now-body">
+                      <!-- start modal  -->
+                      <button
+                        type="button"
+                        class="btn book_now_text"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        data-bs-whatever="@mdo"
+                      >
+                        BOOK NOW
+                      </button>
+                      <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">
+                                New message
+                              </h5>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <form>
+                                    <div>
+                                      <label
+                                        for="Select Car Type name"
+                                        class="col-form-label"
+                                        >Select Car Type</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Pick-up Date name"
+                                        class="col-form-label"
+                                        >Pick-up Date</label
+                                      >
+                                      <input
+                                        type="date"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Pick-up Location name"
+                                        class="col-form-label"
+                                        >Pick-up Location</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Drop-of Location name"
+                                        class="col-form-label"
+                                        >Drop-of Location</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                  </form>
+                                </div>
+                                <div class="col-lg-6">
+                                  <form>
+                                    <div>
+                                      <label
+                                        for="recipient-name"
+                                        class="col-form-label"
+                                        >Name</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label for="Email" class="col-form-label"
+                                        >Email</label
+                                      >
+                                      <input
+                                        type="email"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Phone Number"
+                                        class="col-form-label"
+                                        >Phone Number</label
+                                      >
+                                      <input
+                                        type="number"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <button
+                                        type="button"
+                                        class="btn confirm_button"
+                                      >
+                                        CONFIRM
+                                      </button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#Call_now"
+                      ><button class="book_now_number">09964543465</button></a
+                    >
+                  </div>
+                  <div class="details_main"></div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="Mercedes_Benz_sprinter">
+                  <div class="content">
+                    <img
+                      src="http://127.0.0.1:8000/img/limo/Mercedes-Benz-sprinter.jpg"
+                      alt="Mercedes_Benz_sprinter"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-party_sprinter"
+            role="tabpanel"
+            aria-labelledby="pills-party_sprinter-tab"
+            tabindex="0"
+          >
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="Party_Sprinter car_details_text">
+                  <h1 class="dollar">$ 170.40</h1>
+                  <span class="rent_text">Rent per day</span>
+                  <hr />
+                  <ul class="car_features">
+                    <li>Model: Party Sprinter</li>
+                    <li>Doors: 2</li>
+                    <li>Seats: 2</li>
+                    <li>Luggage: 2 Suitcases / 2 Bags</li>
+                    <li>Transmission: Automatic</li>
+                  </ul>
+                  <div class="book_now_buttons">
+                    <div class="book_now-body">
+                      <!-- start modal  -->
+                      <button
+                        type="button"
+                        class="btn book_now_text"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        data-bs-whatever="@mdo"
+                      >
+                        BOOK NOW
+                      </button>
+                      <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">
+                                New message
+                              </h5>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <form>
+                                    <div>
+                                      <label
+                                        for="Select Car Type name"
+                                        class="col-form-label"
+                                        >Select Car Type</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Pick-up Date name"
+                                        class="col-form-label"
+                                        >Pick-up Date</label
+                                      >
+                                      <input
+                                        type="date"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Pick-up Location name"
+                                        class="col-form-label"
+                                        >Pick-up Location</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Drop-of Location name"
+                                        class="col-form-label"
+                                        >Drop-of Location</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                  </form>
+                                </div>
+                                <div class="col-lg-6">
+                                  <form>
+                                    <div>
+                                      <label
+                                        for="recipient-name"
+                                        class="col-form-label"
+                                        >Name</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label for="Email" class="col-form-label"
+                                        >Email</label
+                                      >
+                                      <input
+                                        type="email"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Phone Number"
+                                        class="col-form-label"
+                                        >Phone Number</label
+                                      >
+                                      <input
+                                        type="number"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <button
+                                        type="button"
+                                        class="btn confirm_button"
+                                      >
+                                        CONFIRM
+                                      </button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#Call_now"
+                      ><button class="book_now_number">09964543465</button></a
+                    >
+                  </div>
+                  <div class="details_main"></div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="Party_Sprinter">
+                  <div class="content">
+                    <img
+                      src="http://127.0.0.1:8000/img/limo/Party-Sprinter.jpg"
+                      alt="Party_Sprinter"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-party-bus"
+            role="tabpanel"
+            aria-labelledby="pills-party-bus-tab"
+            tabindex="0"
+          >
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="Party_bus car_details_text">
+                  <h1 class="dollar">$ 200.00</h1>
+                  <span class="rent_text">Rent per day</span>
+                  <hr />
+                  <ul class="car_features">
+                    <li>Model: Party_bus</li>
+                    <li>Doors: 6</li>
+                    <li>Seats: 12</li>
+                    <li>Luggage: 6 Suitcases</li>
+                    <li>Transmission: Manual</li>
+                  </ul>
+                  <div class="book_now_buttons">
+                    <div class="book_now-body">
+                      <!-- start modal  -->
+                      <button
+                        type="button"
+                        class="btn book_now_text"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        data-bs-whatever="@mdo"
+                      >
+                        BOOK NOW
+                      </button>
+                      <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">
+                                New message
+                              </h5>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <form>
+                                    <div>
+                                      <label
+                                        for="Select Car Type name"
+                                        class="col-form-label"
+                                        >Select Car Type</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Pick-up Date name"
+                                        class="col-form-label"
+                                        >Pick-up Date</label
+                                      >
+                                      <input
+                                        type="date"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Pick-up Location name"
+                                        class="col-form-label"
+                                        >Pick-up Location</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Drop-of Location name"
+                                        class="col-form-label"
+                                        >Drop-of Location</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                  </form>
+                                </div>
+                                <div class="col-lg-6">
+                                  <form>
+                                    <div>
+                                      <label
+                                        for="recipient-name"
+                                        class="col-form-label"
+                                        >Name</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label for="Email" class="col-form-label"
+                                        >Email</label
+                                      >
+                                      <input
+                                        type="email"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <label
+                                        for="Phone Number"
+                                        class="col-form-label"
+                                        >Phone Number</label
+                                      >
+                                      <input
+                                        type="number"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <div>
+                                      <button
+                                        type="button"
+                                        class="btn confirm_button"
+                                      >
+                                        CONFIRM
+                                      </button>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#Call_now"
+                      ><button class="book_now_number">09964543465</button></a
+                    >
+                  </div>
+                  <div class="details_main"></div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="Party_bus">
+                  <div class="content">
+                    <img
+                      src="http://127.0.0.1:8000/img/limo/Party-bus.jpg"
+                      alt="Party_bus"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-
+    </div>
+    <!-- Update ends here  -->
     <!-- testimonial section start  -->
 
     <section class="testimonial_section">

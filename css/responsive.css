@@ -16,6 +16,9 @@
   }
   /* home section start  */
 
+  .background {
+    padding: 1rem;
+  }
   .unlock_big {
     font-size: 30px;
     line-height: inherit;
@@ -50,34 +53,20 @@
   }
 
   /* vehicle model section  */
-  #myBtnContainer .btn {
-    margin-bottom: 0.5rem;
-  }
+
   .car_details_text {
     padding: 1rem;
   }
-  .main {
-    padding: 1rem;
-  }
+
   h1.our_rental_fleet_text {
     font-size: 1.5rem;
   }
   h3.vehicle_model_text {
     font-size: 1rem;
   }
-  .vehicle_demo_section .main .content img {
-    margin-top: 2rem;
-    width: 100%;
-  }
 
-  .vehicle_demo_section {
+  .vehicle-demo-section {
     background-image: none;
-  }
-  .vehicle_demo_section .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .book-now-section .wrapper-content .booking-offer {
     right: -9px;
@@ -206,6 +195,9 @@
   .home-text span.plan {
     font-size: 20px;
   }
+  .background {
+    padding: 1.5rem;
+  }
   .unlock_big {
     font-size: 30px;
     line-height: inherit;
@@ -219,12 +211,10 @@
   .navbar .navbar-brand {
     margin-left: 9px;
   }
-  .vehicle_demo_section {
+  .vehicle-demo-section {
     background-image: none;
   }
-  .main {
-    padding: 2rem;
-  }
+
   .details_main {
     right: 0;
     transform: rotate(180deg) translateX(-50%);
@@ -244,9 +234,7 @@
   .btn {
     margin-bottom: 0.5rem;
   }
-  #myBtnContainer {
-    margin: 1rem;
-  }
+
   h1.articles {
     font-size: 2rem;
   }
@@ -346,6 +334,9 @@
   .navbar .navbar-brand {
     margin-left: 9px;
   }
+  .background {
+    padding: 2rem;
+  }
   .unlock_big {
     font-size: 2.5rem;
     line-height: normal;
@@ -356,14 +347,9 @@
   .home-section .container {
     max-width: none;
   }
-  #myBtnContainer .btn {
-    margin-bottom: 0.5rem;
-  }
-  .vehicle_demo_section {
+
+  .vehicle-demo-section {
     background-image: none;
-  }
-  .vehicle_demo_section .content img {
-    margin-top: 3rem;
   }
   .details_main {
     transform: rotate(180deg) translateX(-50%);
@@ -482,13 +468,11 @@
   .home-section .container {
     max-width: none;
   }
-  .main {
-    padding: 0.5rem;
-  }
+
   .background {
-    padding: 0 1rem;
+    padding: 2rem 1.5rem;
   }
-  .vehicle_demo_section {
+  .vehicle-demo-section {
     background-image: none;
   }
   .details_main {
@@ -529,9 +513,6 @@
   .blog_section .container {
     max-width: none;
     width: 100%;
-  }
-  #myBtnContainer .btn {
-    margin-bottom: 0.5rem;
   }
 
   .contact_section .container {
@@ -641,14 +622,9 @@
     font-size: 19px;
     line-height: normal;
   }
-  #myBtnContainer .btn {
-    margin-bottom: 0.5rem;
-  }
-  .main {
-    padding: 0.8rem;
-  }
+
   .background {
-    padding: 0 1rem;
+    padding: 1.7rem;
   }
   .car_details_text {
     padding: 2rem;
@@ -738,14 +714,8 @@
     font-size: 21px;
   }
 
-  #myBtnContainer .btn {
-    margin-bottom: 0.5rem;
-  }
-  .main {
-    padding: 0.8rem;
-  }
   .background {
-    padding: 0 2rem;
+    padding: 2rem 2.5rem;
   }
   .details_main {
     right: 0;
@@ -842,15 +812,9 @@
   p.vehicle_model_paragraph {
     font-size: 1.5rem;
   }
-  #myBtnContainer .btn {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-  }
-  .main {
-    padding: 0.8rem;
-  }
+
   .background {
-    padding: 0 4rem;
+    padding: 3rem 4.5rem;
   }
   .details_main {
     right: 0;

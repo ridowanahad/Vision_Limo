@@ -248,31 +248,35 @@ h4.small_text {
 
 /* vehicle model text start  */
 
-.vehicle_demo_section {
-  position: relative;
+/* Updated version */
+.vehicle-demo-section img {
+  width: 100%;
 }
-.vehicle_demo_section {
+.background {
+  padding: 2rem 0;
+}
+.vehicle-demo-section .nav-pills .nav-link.active {
+  background-color: #252e62;
+  color: white;
+}
+.vehicle-demo-section .nav-item .nav-link {
+  background: #ffffff;
+  box-shadow: 0px 2px 6px #00000029;
+  margin: 0.2rem;
+  color: #252e62;
+}
+
+.vehicle-demo-section {
+  position: relative;
   background-image: url(/images/Path\ 33.svg);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 50%;
   position: relative;
   z-index: 6;
-  /* transform: translate(-50%, -50%) rotate(0deg); */
   background-position-y: translate(50%);
 }
-/* .background .bg_img {
-  position: absolute;
-  width: 42rem;
-  top: 9rem;
-  right: -8rem;
-} */
-
-.vehicle_demo_section .modal-content {
-  border-radius: 22px;
-  padding: 2rem;
-}
-
+/* update ends here  */
 .vehicle_models_texts {
   text-align: center;
   background: #ed6b4d;
@@ -295,52 +299,6 @@ p.vehicle_model_paragraph {
   color: #ffffffd5;
 }
 
-/* Vehicle Models */
-
-.main {
-  padding: 3.3rem;
-  min-height: 545px;
-}
-
-.column {
-  display: none; /* Hide all elements by default */
-}
-
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-#myBtnContainer .btn {
-  border: none;
-  outline: none;
-  padding: 12px 14px;
-  cursor: pointer;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 2px 6px #00000029;
-  border-radius: 4px;
-}
-
-#myBtnContainer .btn:hover {
-  background-color: #ddd;
-}
-
-#myBtnContainer .btn.active {
-  background-color: #252e62;
-  color: white;
-}
-#myBtnContainer {
-  text-align: center;
-  margin-top: 1rem;
-}
 /* function end  */
 button.book_now_text {
   padding: 10px 30px;
@@ -384,12 +342,7 @@ button.book_now_number {
   color: #232323;
   font-weight: 600;
 }
-.vehicle_demo_section .main .content img {
-  width: 100%;
-}
-/* .Cadillac_XT6 img {
-  width: 45rem;
-} */
+
 .details_main {
   position: absolute;
   left: 32rem;
@@ -402,6 +355,8 @@ button.book_now_number {
   border-left-width: 20px;
   transform: rotate(90deg);
 }
+
+/* End of vehicle demo section  */
 
 /* testimonial section */
 .testimonial_section {
@@ -670,4 +625,7 @@ footer .footer_car {
 }
 .blog_section .owl-dots {
   margin-bottom: 31px;
+}
+p.footer_paragraph {
+  text-align: justify;
 }

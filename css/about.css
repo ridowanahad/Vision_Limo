@@ -24,6 +24,7 @@
 .about-history-paragraph {
   padding: 2rem 4rem 2rem 1rem;
   font-weight: 600;
+  text-align: justify;
 }
 .flag {
   position: relative;
@@ -61,6 +62,7 @@
 .fleet_paragraph {
   padding: 2rem;
   font-weight: 600;
+  text-align: justify;
 }
 .flag .primary_logo {
   position: absolute;
